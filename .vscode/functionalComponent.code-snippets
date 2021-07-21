@@ -1,0 +1,27 @@
+/*
+* File > Preferences > User Snippets
+* Used to create a part of code that can be reused multiple times
+* just by typing the prefix, and then pressing Enter when the VS Code suggests
+* to autocomplete
+*/
+
+{
+	"Functional component": {
+		"scope": "javascript",
+		"prefix": "functionalComponent",
+		"body": [
+			"import React from 'react'",
+			"import {Text} from 'react-native'",
+			"import componentStyle from './componentStyle'",
+			"",
+			"export default props => {",
+			"    return (",
+			"        <Text style={componentStyle.bigText}>",
+			"            $1",
+			"        </Text>",
+			"    )",
+			"}"
+		],
+		"description": "Log output to console"
+	}
+}
